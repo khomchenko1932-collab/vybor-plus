@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Выбор+",
+    "slug": "vybor-plus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "vybor-plus",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "typecheck": "tsc --noEmit",
+    "server": "node --env-file=.env server.mjs",
+    "dev": "node --env-file=.env server.mjs"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.5",
+    "@expo/vector-icons": "^14.0.4",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "expo": "~53.0.20",
+    "expo-asset": "~11.1.7",
+    "expo-sharing": "~13.1.5",
+    "expo-status-bar": "~2.2.3",
+    "html2canvas": "^1.4.1",
+    "openai": "^6.44.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-view-shot": "4.0.3",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
+  }
+}

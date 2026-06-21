@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: vybor-plus-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: DEMO_FALLBACK
+        value: "true"
+      - key: OPENAI_MAX_RETRIES
+        value: "0"
+      - key: RATE_LIMIT_MAX
+        value: "30"
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "60000"
+      - key: REQUEST_TIMEOUT_MS
+        value: "45000"
+      - key: MAX_BODY_BYTES
+        value: "100000"

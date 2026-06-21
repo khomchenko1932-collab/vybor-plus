@@ -1,0 +1,9 @@
+node_modules
+.expo
+.git
+.env
+work
+outputs
+App.tsx
+src
+*.log
